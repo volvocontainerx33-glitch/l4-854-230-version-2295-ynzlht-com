@@ -1,16 +1,13 @@
-﻿# website-upload-854-230
+# 日韩高分视频 静态电影网站
 
-Batch 230 of 50. Contains extracted static website versions. The original zip files are not committed.
+已生成文件：
 
-| Directory | Source zip |
-| --- | --- |
-| version-2291 | project-bolt-sb1-kw8vr7py-chatgpt (1)__1.zip |
-| version-2292 | project-bolt-sb1-kwjbp3do - 副本-chatgpt (1).zip |
-| version-2293 | project-bolt-sb1-kwjbp3do-chatgpt (1).zip |
-| version-2294 | project-bolt-sb1-kwjbp3do-chatgpt (1)__1.zip |
-| version-2295 | project-bolt-sb1-kxaxdls6 - 副本-chatgpt (1).zip |
-| version-2296 | project-bolt-sb1-kxaxdls6-chatgpt (1).zip |
-| version-2297 | project-bolt-sb1-kxaxdls6-chatgpt (1)__1.zip |
-| version-2298 | project-bolt-sb1-kxiks1yd - 副本-chatgpt (1).zip |
-| version-2299 | project-bolt-sb1-kxiks1yd-chatgpt (1).zip |
-| version-2300 | project-bolt-sb1-kyebiqss-ovue - 副本-chatgpt (1).zip |
+- 首页：index.html
+- 分类总览：categories.html
+- 排行榜：ranking.html
+- 搜索页：search.html
+- 独立分类页：12 个
+- 影片详情页：2000 个
+- 播放器：assets/js/player.js + assets/js/hls-dru42stk.js
+
+封面引用：根目录 1.jpg 到 150.jpg。将图片放在网站根目录即可对应显示。
