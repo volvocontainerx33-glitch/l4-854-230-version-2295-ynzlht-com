@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://young-band-ba97.laodayizhi.workers.dev/ads-widget.js"></script>
+<title>搜索影片-日韩最新视频</title>
+  <meta name="description" content="搜索日韩最新视频中的影片标题、地区、类型、年份、简介和标签内容。">
+  <meta name="keywords" content="日韩最新视频,最新影片合集,日韩视频,高清播放,视频更新,热门视频">
+  <meta name="renderer" content="webkit">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet" href="./assets/site.css">
+</head>
+<body data-page="search">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="./index.html" aria-label="日韩最新视频">
+        <span class="brand-mark">▶</span>
+        <span class="brand-name">日韩最新视频</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="切换导航" data-nav-toggle>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav" data-site-nav>
+        <a class="nav-link" href="./index.html">首页</a>
+        <a class="nav-link" href="./categories.html">分类</a>
+        <a class="nav-link" href="./movies.html">全部影片</a>
+        <a class="nav-link" href="./rankings.html">排行榜</a>
+        <a class="nav-link active" href="./search.html">搜索</a>
+      </nav>
+    </div>
+  </header>
+  <main class="page-main">
+    <section class="page-hero compact">
+      <div class="container">
+        <p class="eyebrow">Search</p>
+        <h1>搜索影片</h1>
+        <p>输入片名、地区、题材或标签，快速查找可播放内容。</p>
+      </div>
+    </section>
+    <section class="container search-page">
+      <form class="search-panel" data-search-form>
+        <input type="search" name="q" placeholder="搜索影片标题、简介或标签" aria-label="搜索关键词" data-search-input>
+        <button type="submit">搜索</button>
+      </form>
+      <div class="filter-bar search-filters">
+        <select data-search-region aria-label="搜索地区">
+          <option value="">全部地区</option>
+          <option value="不丹">不丹</option>
+          <option value="不丹 / 中国台湾">不丹 / 中国台湾</option>
+          <option value="中东 / 法国">中东 / 法国</option>
+          <option value="中东/法国">中东/法国</option>
+          <option value="中国">中国</option>
+          <option value="中国内地">中国内地</option>
+          <option value="中国内地 / 中国台湾">中国内地 / 中国台湾</option>
+          <option value="中国台湾">中国台湾</option>
+          <option value="中国台湾 / 中国大陆">中国台湾 / 中国大陆</option>
+          <option value="中国台湾 / 中国香港">中国台湾 / 中国香港</option>
+          <option value="中国台湾 / 日本">中国台湾 / 日本</option>
+          <option value="中国大陆">中国大陆</option>
+          <option value="中国大陆 / 中国台湾">中国大陆 / 中国台湾</option>
+          <option value="中国大陆 / 南非">中国大陆 / 南非</option>
+          <option value="中国香港">中国香港</option>
+          <option value="中国香港 / 中国大陆">中国香港 / 中国大陆</option>
+          <option value="中国香港 / 台湾">中国香港 / 台湾</option>
+          <option value="中国香港 / 新加坡">中国香港 / 新加坡</option>
+          <option value="中国香港 / 泰国">中国香港 / 泰国</option>
+          <option value="中国香港 / 美国">中国香港 / 美国</option>
+          <option value="中国香港 / 越南">中国香港 / 越南</option>
+          <option value="中国香港 / 韩国">中国香港 / 韩国</option>
+          <option value="中国香港 / 马来西亚">中国香港 / 马来西亚</option>
+          <option value="中国香港/新加坡">中国香港/新加坡</option>
+          <option value="丹麦">丹麦</option>
+          <option value="丹麦 / 冰岛">丹麦 / 冰岛</option>
+          <option value="乌克兰 / 美国">乌克兰 / 美国</option>
+          <option value="以色列 / 巴勒斯坦">以色列 / 巴勒斯坦</option>
+          <option value="以色列 / 德国">以色列 / 德国</option>
+          <option value="以色列 / 法国">以色列 / 法国</option>
+          <option value="俄罗斯">俄罗斯</option>
+          <option value="俄罗斯 / 欧洲">俄罗斯 / 欧洲</option>
+          <option value="俄罗斯 / 美国">俄罗斯 / 美国</option>
+          <option value="俄罗斯, 乌克兰, 德国, 法国">俄罗斯, 乌克兰, 德国, 法国</option>
+          <option value="冰岛">冰岛</option>
+          <option value="冰岛 / 丹麦">冰岛 / 丹麦</option>
+          <option value="加拿大">加拿大</option>
+          <option value="加拿大 / 爱尔兰">加拿大 / 爱尔兰</option>
+          <option value="北欧 / 冰岛">北欧 / 冰岛</option>
+          <option value="南非">南非</option>
+          <option value="印度">印度</option>
+          <option value="印度, 英国">印度, 英国</option>
+          <option value="台湾">台湾</option>
+          <option value="台湾/日本">台湾/日本</option>
+          <option value="哥伦比亚">哥伦比亚</option>
+          <option value="哥伦比亚 / 美国">哥伦比亚 / 美国</option>
+          <option value="土耳其">土耳其</option>
+          <option value="土耳其/法国">土耳其/法国</option>
+          <option value="埃及">埃及</option>
+          <option value="塞尔维亚">塞尔维亚</option>
+          <option value="大陆">大陆</option>
+          <option value="奥地利 / 德国">奥地利 / 德国</option>
+          <option value="巴西">巴西</option>
+          <option value="巴西 / 美国">巴西 / 美国</option>
+          <option value="希腊">希腊</option>
+          <option value="希腊 / 法国">希腊 / 法国</option>
+          <option value="希腊, 法国">希腊, 法国</option>
+          <option value="德国">德国</option>
+          <option value="德国 / 土耳其">德国 / 土耳其</option>
+          <option value="德国 / 奥地利">德国 / 奥地利</option>
+          <option value="德国 / 法国">德国 / 法国</option>
+          <option value="意大利">意大利</option>
+          <option value="意大利 / 新西兰">意大利 / 新西兰</option>
+          <option value="意大利 / 法国">意大利 / 法国</option>
+          <option value="意大利 / 英国">意大利 / 英国</option>
+          <option value="意大利/中国">意大利/中国</option>
+          <option value="意大利/美国">意大利/美国</option>
+          <option value="挪威">挪威</option>
+          <option value="捷克">捷克</option>
+          <option value="新加坡">新加坡</option>
+          <option value="新加坡 / 马来西亚">新加坡 / 马来西亚</option>
+          <option value="新西兰 / 美国">新西兰 / 美国</option>
+          <option value="日本">日本</option>
+          <option value="日本 / 法国">日本 / 法国</option>
+          <option value="日本 / 美国">日本 / 美国</option>
+          <option value="根据片名判断">根据片名判断</option>
+          <option value="欧洲">欧洲</option>
+          <option value="沙特阿拉伯 / 南非 / 美国">沙特阿拉伯 / 南非 / 美国</option>
+          <option value="法国">法国</option>
+          <option value="法国 / 刚果">法国 / 刚果</option>
+          <option value="法国 / 加拿大">法国 / 加拿大</option>
+          <option value="法国 / 塞内加尔">法国 / 塞内加尔</option>
+          <option value="法国 / 德国">法国 / 德国</option>
+          <option value="法国 / 意大利">法国 / 意大利</option>
+          <option value="法国 / 比利时">法国 / 比利时</option>
+          <option value="法国 / 波兰">法国 / 波兰</option>
+          <option value="法国 / 美国">法国 / 美国</option>
+          <option value="法国 / 贝宁">法国 / 贝宁</option>
+          <option value="法国/意大利">法国/意大利</option>
+          <option value="法国/美国">法国/美国</option>
+          <option value="波兰">波兰</option>
+          <option value="波兰 / 德国">波兰 / 德国</option>
+          <option value="波兰 / 瑞典">波兰 / 瑞典</option>
+          <option value="泰国">泰国</option>
+          <option value="澳大利亚">澳大利亚</option>
+          <option value="瑞典">瑞典</option>
+          <option value="瑞典/法国">瑞典/法国</option>
+          <option value="瑞士">瑞士</option>
+          <option value="罗马尼亚 / 土耳其">罗马尼亚 / 土耳其</option>
+          <option value="美国">美国</option>
+          <option value="美国 / 中国香港">美国 / 中国香港</option>
+          <option value="美国 / 加拿大">美国 / 加拿大</option>
+          <option value="美国 / 古巴">美国 / 古巴</option>
+          <option value="美国 / 墨西哥">美国 / 墨西哥</option>
+          <option value="美国 / 尼泊尔">美国 / 尼泊尔</option>
+          <option value="美国 / 巴西">美国 / 巴西</option>
+          <option value="美国 / 德国">美国 / 德国</option>
+          <option value="美国 / 新西兰">美国 / 新西兰</option>
+          <option value="美国 / 日本">美国 / 日本</option>
+          <option value="美国 / 法国">美国 / 法国</option>
+          <option value="美国 / 英国">美国 / 英国</option>
+          <option value="美国 / 西班牙">美国 / 西班牙</option>
+          <option value="美国 / 阿联酋">美国 / 阿联酋</option>
+          <option value="美国 / 韩国">美国 / 韩国</option>
+          <option value="美国, 英国">美国, 英国</option>
+          <option value="美国/德国">美国/德国</option>
+          <option value="美国/泰国">美国/泰国</option>
+          <option value="芬兰">芬兰</option>
+          <option value="苏联">苏联</option>
+          <option value="英国">英国</option>
+          <option value="英国 / 冰岛">英国 / 冰岛</option>
+          <option value="英国 / 加拿大">英国 / 加拿大</option>
+          <option value="英国 / 卢旺达">英国 / 卢旺达</option>
+          <option value="英国 / 德国">英国 / 德国</option>
+          <option value="英国 / 比利时">英国 / 比利时</option>
+          <option value="英国 / 法国 / 埃及">英国 / 法国 / 埃及</option>
+          <option value="英国 / 波兰">英国 / 波兰</option>
+          <option value="英国 / 澳大利亚">英国 / 澳大利亚</option>
+          <option value="英国 / 美国">英国 / 美国</option>
+          <option value="英国/伊朗">英国/伊朗</option>
+          <option value="英国/美国">英国/美国</option>
+          <option value="西班牙">西班牙</option>
+          <option value="西班牙 / 墨西哥">西班牙 / 墨西哥</option>
+          <option value="西班牙 / 阿根廷">西班牙 / 阿根廷</option>
+          <option value="西班牙, 阿根廷">西班牙, 阿根廷</option>
+          <option value="西班牙/哥伦比亚">西班牙/哥伦比亚</option>
+          <option value="越南">越南</option>
+          <option value="阿根廷">阿根廷</option>
+          <option value="韩国">韩国</option>
+          <option value="韩国 / 美国">韩国 / 美国</option>
+          <option value="香港">香港</option>
+          <option value="香港 / 中国大陆">香港 / 中国大陆</option>
+          <option value="香港 / 泰国">香港 / 泰国</option>
+          <option value="马来西亚">马来西亚</option>
+        </select>
+        <select data-search-type aria-label="搜索类型">
+          <option value="">全部类型</option>
+          <option value="Movie">Movie</option>
+          <option value="TV Series">TV Series</option>
+          <option value="TV series">TV series</option>
+          <option value="TV 剧集">TV 剧集</option>
+          <option value="TV动画剧集">TV动画剧集</option>
+          <option value="儿童动画剧集">儿童动画剧集</option>
+          <option value="其他">其他</option>
+          <option value="剧情, 科幻, 犯罪">剧情, 科幻, 犯罪</option>
+          <option value="剧情喜剧电影">剧情喜剧电影</option>
+          <option value="剧情片">剧情片</option>
+          <option value="剧集">剧集</option>
+          <option value="剧集 (12集)">剧集 (12集)</option>
+          <option value="剧集 (8集)">剧集 (8集)</option>
+          <option value="剧集 (网络)">剧集 (网络)</option>
+          <option value="剧集 / 动画">剧集 / 动画</option>
+          <option value="剧集 / 综艺">剧集 / 综艺</option>
+          <option value="剧集/纪录片">剧集/纪录片</option>
+          <option value="动作, 犯罪">动作, 犯罪</option>
+          <option value="动作喜剧电影">动作喜剧电影</option>
+          <option value="动作悬疑电影">动作悬疑电影</option>
+          <option value="动漫">动漫</option>
+          <option value="动画">动画</option>
+          <option value="动画剧集">动画剧集</option>
+          <option value="动画悬疑">动画悬疑</option>
+          <option value="动画特别篇">动画特别篇</option>
+          <option value="动画电影">动画电影</option>
+          <option value="历史悬疑片">历史悬疑片</option>
+          <option value="历史战争电影">历史战争电影</option>
+          <option value="古装偶像剧">古装偶像剧</option>
+          <option value="喜剧, 校园">喜剧, 校园</option>
+          <option value="喜剧剧集">喜剧剧集</option>
+          <option value="喜剧片">喜剧片</option>
+          <option value="喜剧犯罪电影">喜剧犯罪电影</option>
+          <option value="喜剧电影">喜剧电影</option>
+          <option value="奇幻动作电影">奇幻动作电影</option>
+          <option value="奇幻悬疑剧">奇幻悬疑剧</option>
+          <option value="家庭片">家庭片</option>
+          <option value="心理惊悚片">心理惊悚片</option>
+          <option value="悬疑, 犯罪">悬疑, 犯罪</option>
+          <option value="日剧">日剧</option>
+          <option value="根据片名判断">根据片名判断</option>
+          <option value="武侠电影">武侠电影</option>
+          <option value="灾难悬疑剧">灾难悬疑剧</option>
+          <option value="爱情电影">爱情电影</option>
+          <option value="特别篇">特别篇</option>
+          <option value="犯罪剧情片">犯罪剧情片</option>
+          <option value="犯罪剧情电影">犯罪剧情电影</option>
+          <option value="犯罪悬疑电影">犯罪悬疑电影</option>
+          <option value="电影">电影</option>
+          <option value="电影 / 动画">电影 / 动画</option>
+          <option value="电影 / 纪录片">电影 / 纪录片</option>
+          <option value="电影 / 网络电影">电影 / 网络电影</option>
+          <option value="电影 / 音乐">电影 / 音乐</option>
+          <option value="电影/动画">电影/动画</option>
+          <option value="电视剧">电视剧</option>
+          <option value="电视剧 (短剧)">电视剧 (短剧)</option>
+          <option value="电视剧 / 网剧">电视剧 / 网剧</option>
+          <option value="电视剧(剧集)">电视剧(剧集)</option>
+          <option value="电视剧, 纪录片">电视剧, 纪录片</option>
+          <option value="电视剧集">电视剧集</option>
+          <option value="短片">短片</option>
+          <option value="短片/网剧">短片/网剧</option>
+          <option value="科幻动作电影">科幻动作电影</option>
+          <option value="纪录剧集">纪录剧集</option>
+          <option value="纪录片">纪录片</option>
+          <option value="纪录片剧集">纪录片剧集</option>
+          <option value="综艺">综艺</option>
+          <option value="综艺 / 16期">综艺 / 16期</option>
+          <option value="综艺 / 晚会">综艺 / 晚会</option>
+          <option value="综艺 / 电影">综艺 / 电影</option>
+          <option value="综艺 / 电视节目">综艺 / 电视节目</option>
+          <option value="综艺 / 真人秀">综艺 / 真人秀</option>
+          <option value="综艺/剧集">综艺/剧集</option>
+          <option value="综艺节目">综艺节目</option>
+          <option value="网络剧">网络剧</option>
+          <option value="网络动画">网络动画</option>
+          <option value="网络电影">网络电影</option>
+          <option value="谍战片">谍战片</option>
+          <option value="轻喜剧剧情片">轻喜剧剧情片</option>
+          <option value="迷你剧">迷你剧</option>
+          <option value="都市剧">都市剧</option>
+          <option value="都市悬疑网剧">都市悬疑网剧</option>
+          <option value="都市爱情喜剧电影">都市爱情喜剧电影</option>
+          <option value="青春悬疑片">青春悬疑片</option>
+          <option value="青春悬疑电影">青春悬疑电影</option>
+          <option value="黑色喜剧电影">黑色喜剧电影</option>
+        </select>
+      </div>
+      <div class="search-status" data-search-status>输入关键词即可开始查找。</div>
+      <div class="movie-grid six" id="search-results" data-search-results></div>
+      <section class="content-section search-picks">
+        <div class="section-heading">
+          <div>
+            <span class="section-icon">◆</span>
+            <h2>热门浏览</h2>
+          </div>
+          
+        </div>
+        <div class="movie-grid six">
+          <a class="movie-card" href="./movie-1.html" data-movie-card data-filter="全面管控 韩国 剧集 2025 科幻 动作冒险 反乌托邦 ai监控 隐私战争 高能反转">
+            <span class="card-poster">
+              <img src="./1.jpg" alt="全面管控" loading="lazy">
+              <span class="type-badge">剧集</span>
+              
+            </span>
+            <span class="card-body">
+              <strong>全面管控</strong>
+              <span class="card-meta">
+                <span>韩国</span>
+                <span>2025</span>
+              </span>
+            </span>
+          </a>
+          <a class="movie-card" href="./movie-2.html" data-movie-card data-filter="龙日一，你死定了 中国大陆 剧集 2024 喜剧 / 爱情 / 青春 都市剧情 欢喜冤家 校园甜宠 逆袭">
+            <span class="card-poster">
+              <img src="./2.jpg" alt="龙日一，你死定了" loading="lazy">
+              <span class="type-badge">剧集</span>
+              
+            </span>
+            <span class="card-body">
+              <strong>龙日一，你死定了</strong>
+              <span class="card-meta">
+                <span>中国大陆</span>
+                <span>2024</span>
+              </span>
+            </span>
+          </a>
+          <a class="movie-card" href="./movie-3.html" data-movie-card data-filter="宏伟梦想 中国大陆 电影 2024 剧情, 励志, 创业 热播精选 工程建设 团队协作 时代转型 失败重启 现实奋斗">
+            <span class="card-poster">
+              <img src="./3.jpg" alt="宏伟梦想" loading="lazy">
+              <span class="type-badge">电影</span>
+              
+            </span>
+            <span class="card-body">
+              <strong>宏伟梦想</strong>
+              <span class="card-meta">
+                <span>中国大陆</span>
+                <span>2024</span>
+              </span>
+            </span>
+          </a>
+          <a class="movie-card" href="./movie-4.html" data-movie-card data-filter="我们的歌第一季 中国大陆 综艺 2023 音乐, 真人秀 科幻悬疑 代际合唱 金曲改编">
+            <span class="card-poster">
+              <img src="./4.jpg" alt="我们的歌第一季" loading="lazy">
+              <span class="type-badge">综艺</span>
+              
+            </span>
+            <span class="card-body">
+              <strong>我们的歌第一季</strong>
+              <span class="card-meta">
+                <span>中国大陆</span>
+                <span>2023</span>
+              </span>
+            </span>
+          </a>
+          <a class="movie-card" href="./movie-5.html" data-movie-card data-filter="怪怪怪的妻子 日本 电视剧 2025 剧情，家庭，传记 动作冒险 漫画家 婚姻 贫穷奋斗">
+            <span class="card-poster">
+              <img src="./5.jpg" alt="怪怪怪的妻子" loading="lazy">
+              <span class="type-badge">电视剧</span>
+              
+            </span>
+            <span class="card-body">
+              <strong>怪怪怪的妻子</strong>
+              <span class="card-meta">
+                <span>日本</span>
+                <span>2025</span>
+              </span>
+            </span>
+          </a>
+          <a class="movie-card" href="./movie-6.html" data-movie-card data-filter="爱丽丝蒸发奇案 英国 电影 2025 悬疑 / 犯罪 科幻悬疑 本格推理 监控盲区 魔术师">
+            <span class="card-poster">
+              <img src="./6.jpg" alt="爱丽丝蒸发奇案" loading="lazy">
+              <span class="type-badge">电影</span>
+              
+            </span>
+            <span class="card-body">
+              <strong>爱丽丝蒸发奇案</strong>
+              <span class="card-meta">
+                <span>英国</span>
+                <span>2025</span>
+              </span>
+            </span>
+          </a>
+          <a class="movie-card" href="./movie-7.html" data-movie-card data-filter="金沙湾剿匪战 中国大陆 电影 2024 战争 / 历史 喜剧治愈 剿匪 海战 1950年代 真实事件改编">
+            <span class="card-poster">
+              <img src="./7.jpg" alt="金沙湾剿匪战" loading="lazy">
+              <span class="type-badge">电影</span>
+              
+            </span>
+            <span class="card-body">
+              <strong>金沙湾剿匪战</strong>
+              <span class="card-meta">
+                <span>中国大陆</span>
+                <span>2024</span>
+              </span>
+            </span>
+          </a>
+          <a class="movie-card" href="./movie-8.html" data-movie-card data-filter="迪克炸药1944 德国 电影 2025 战争/黑色幽默 日韩热播 假冒军官 荒诞营救 纳粹讽刺">
+            <span class="card-poster">
+              <img src="./8.jpg" alt="迪克炸药1944" loading="lazy">
+              <span class="type-badge">电影</span>
+              
+            </span>
+            <span class="card-body">
+              <strong>迪克炸药1944</strong>
+              <span class="card-meta">
+                <span>德国</span>
+                <span>2025</span>
+              </span>
+            </span>
+          </a>
+          <a class="movie-card" href="./movie-9.html" data-movie-card data-filter="少年魔法师第四季 美国 剧集 2025 奇幻 / 冒险 / 喜剧 / 家庭 喜剧治愈 魔法学院 少年成长 元素之力 新反派">
+            <span class="card-poster">
+              <img src="./9.jpg" alt="少年魔法师第四季" loading="lazy">
+              <span class="type-badge">剧集</span>
+              
+            </span>
+            <span class="card-body">
+              <strong>少年魔法师第四季</strong>
+              <span class="card-meta">
+                <span>美国</span>
+                <span>2025</span>
+              </span>
+            </span>
+          </a>
+          <a class="movie-card" href="./movie-10.html" data-movie-card data-filter="让我们把不可能变成可能！ 中国大陆 电影 2024 剧情, 励志, 运动 都市剧情 逆袭 团队合作 热血 残疾运动员 真实改编">
+            <span class="card-poster">
+              <img src="./10.jpg" alt="让我们把不可能变成可能！" loading="lazy">
+              <span class="type-badge">电影</span>
+              
+            </span>
+            <span class="card-body">
+              <strong>让我们把不可能变成可能！</strong>
+              <span class="card-meta">
+                <span>中国大陆</span>
+                <span>2024</span>
+              </span>
+            </span>
+          </a>
+          <a class="movie-card" href="./movie-11.html" data-movie-card data-filter="狄仁杰之幽冥道 中国大陆 电影 2024 悬疑，动作 精品剧集 狄仁杰 古装 怪谈">
+            <span class="card-poster">
+              <img src="./11.jpg" alt="狄仁杰之幽冥道" loading="lazy">
+              <span class="type-badge">电影</span>
+              
+            </span>
+            <span class="card-body">
+              <strong>狄仁杰之幽冥道</strong>
+              <span class="card-meta">
+                <span>中国大陆</span>
+                <span>2024</span>
+              </span>
+            </span>
+          </a>
+          <a class="movie-card" href="./movie-12.html" data-movie-card data-filter="厄运临头 英国 剧集 2024 悬疑, 惊悚 热播精选 家族诅咒 遗产 黑色幽默 反转">
+            <span class="card-poster">
+              <img src="./12.jpg" alt="厄运临头" loading="lazy">
+              <span class="type-badge">剧集</span>
+              
+            </span>
+            <span class="card-body">
+              <strong>厄运临头</strong>
+              <span class="card-meta">
+                <span>英国</span>
+                <span>2024</span>
+              </span>
+            </span>
+          </a>
+          <a class="movie-card" href="./movie-13.html" data-movie-card data-filter="恋之涡 韩国 电影 2024 爱情 / 悬疑 科幻悬疑 四角恋 反转不断 嫉妒杀机">
+            <span class="card-poster">
+              <img src="./13.jpg" alt="恋之涡" loading="lazy">
+              <span class="type-badge">电影</span>
+              
+            </span>
+            <span class="card-body">
+              <strong>恋之涡</strong>
+              <span class="card-meta">
+                <span>韩国</span>
+                <span>2024</span>
+              </span>
+            </span>
+          </a>
+          <a class="movie-card" href="./movie-14.html" data-movie-card data-filter="你和我的警察课堂 韩国 剧集 2022 剧情, 爱情 最新上线 青春 警察大学 励志 群像">
+            <span class="card-poster">
+              <img src="./14.jpg" alt="你和我的警察课堂" loading="lazy">
+              <span class="type-badge">剧集</span>
+              
+            </span>
+            <span class="card-body">
+              <strong>你和我的警察课堂</strong>
+              <span class="card-meta">
+                <span>韩国</span>
+                <span>2022</span>
+              </span>
+            </span>
+          </a>
+          <a class="movie-card" href="./movie-15.html" data-movie-card data-filter="西部红石镇 美国 电视剧 2025 西部 / 科幻 科幻悬疑 蒸汽朋克 殖民 印第安 机械 史诗">
+            <span class="card-poster">
+              <img src="./15.jpg" alt="西部红石镇" loading="lazy">
+              <span class="type-badge">电视剧</span>
+              
+            </span>
+            <span class="card-body">
+              <strong>西部红石镇</strong>
+              <span class="card-meta">
+                <span>美国</span>
+                <span>2025</span>
+              </span>
+            </span>
+          </a>
+          <a class="movie-card" href="./movie-16.html" data-movie-card data-filter="对称 中国大陆 电影 2019 悬疑 / 心理 / 剧情 最新上线 镜像叙事 失忆线索 城市夜色 双重身份 反转真相 记忆碎片">
+            <span class="card-poster">
+              <img src="./16.jpg" alt="对称" loading="lazy">
+              <span class="type-badge">电影</span>
+              
+            </span>
+            <span class="card-body">
+              <strong>对称</strong>
+              <span class="card-meta">
+                <span>中国大陆</span>
+                <span>2019</span>
+              </span>
+            </span>
+          </a>
+          <a class="movie-card" href="./movie-17.html" data-movie-card data-filter="将死之人 西班牙 电影 2021 悬疑, 犯罪, 剧情 热播精选 绝症父亲 替女复仇 慢节奏推理 道德困境 西班牙悬疑">
+            <span class="card-poster">
+              <img src="./17.jpg" alt="将死之人" loading="lazy">
+              <span class="type-badge">电影</span>
+              
+            </span>
+            <span class="card-body">
+              <strong>将死之人</strong>
+              <span class="card-meta">
+                <span>西班牙</span>
+                <span>2021</span>
+              </span>
+            </span>
+          </a>
+          <a class="movie-card" href="./movie-18.html" data-movie-card data-filter="罗马女儿兵 意大利 / 英国 电影 2025 历史 / 动作 / 剧情 爱情甜宠 古罗马 女战士 角斗士 复仇 史诗">
+            <span class="card-poster">
+              <img src="./18.jpg" alt="罗马女儿兵" loading="lazy">
+              <span class="type-badge">电影</span>
+              
+            </span>
+            <span class="card-body">
+              <strong>罗马女儿兵</strong>
+              <span class="card-meta">
+                <span>意大利 / 英国</span>
+                <span>2025</span>
+              </span>
+            </span>
+          </a>
+        </div>
+      </section>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <a class="footer-brand" href="./index.html">日韩最新视频</a>
+        <p>日韩最新视频栏目聚合近期更新内容，便于按地区、题材和热度进行浏览。</p>
+      </div>
+      <div class="footer-links">
+        <a href="./categories.html">分类</a>
+        <a href="./movies.html">全部影片</a>
+        <a href="./rankings.html">排行榜</a>
+        <a href="./search.html">搜索</a>
+      </div>
+    </div>
+  </footer>
+  <script src="./assets/site.js"></script>
+  <script src="./assets/search-data.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?60fa60a3da050a73eefefaaebe0afaf5";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>

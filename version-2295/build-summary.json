@@ -1,0 +1,21 @@
+{
+  "movie_count": 2000,
+  "html_files": 2016,
+  "detail_count": 2000,
+  "missing_baidu": [],
+  "category_counts": {
+    "jpkr-high-score": 167,
+    "word-of-mouth-drama": 167,
+    "suspense-crime": 167,
+    "romance-healing": 167,
+    "comedy-family": 167,
+    "action-adventure": 167,
+    "scifi-fantasy": 167,
+    "animation-doc": 167,
+    "europe-america": 166,
+    "chinese-choice": 166,
+    "new-release": 166,
+    "classic-rewatch": 166
+  },
+  "zip_size": 10943286
+}
